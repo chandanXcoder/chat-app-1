@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Navbar from './component/Navbar'
 import Hero from './component/Hero'
 import Footer from './component/Footer'
+import Contact from './component/Contact'
 import './App.css'
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
     <>
      <Navbar />
      <Hero />
+     <Contact />
      <Footer />
     </>
   )

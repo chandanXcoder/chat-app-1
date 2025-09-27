@@ -45,14 +45,6 @@ const Footer = () => {
     { name: 'Contact', href: '#contact', icon: MessageCircle }
   ];
 
-  const services = [
-    { name: 'Web Development', href: '#web-dev' },
-    { name: 'Mobile Apps', href: '#mobile' },
-    { name: 'UI/UX Design', href: '#design' },
-    { name: 'Technical Consulting', href: '#consulting' },
-    { name: 'Code Review', href: '#review' },
-    { name: 'Mentoring', href: '#mentoring' }
-  ];
 
   const resources = [
     { name: 'Blog', href: '#blog' },
@@ -196,20 +188,7 @@ const Footer = () => {
                 Specialized in creating scalable solutions that drive business growth and user satisfaction.
               </p>
               
-              {/* Tech Stack */}
-              <div className="mb-6">
-                <h4 className="text-white font-semibold mb-3">Tech Stack</h4>
-                <div className="flex flex-wrap gap-2">
-                  {techStack.map((tech, index) => (
-                    <span 
-                      key={index}
-                      className="px-3 py-1 bg-slate-800/50 border border-slate-700/50 rounded-full text-gray-300 text-sm hover:bg-blue-500/10 hover:border-blue-500/30 hover:text-blue-300 transition-all duration-200"
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-              </div>
+             
               
               {/* Contact Info */}
               <div className="space-y-3">
@@ -252,39 +231,12 @@ const Footer = () => {
                 })}
               </ul>
 
-              <h4 className="text-white font-semibold text-lg mb-6 mt-8">Services</h4>
-              <ul className="space-y-3">
-                {services.map((service, index) => (
-                  <li key={index}>
-                    <a 
-                      href={service.href}
-                      className="text-gray-400 hover:text-blue-400 transition-colors duration-200 flex items-center group"
-                    >
-                      {service.name}
-                      <ExternalLink className="w-3 h-3 ml-2 opacity-0 group-hover:opacity-100 transition-opacity" />
-                    </a>
-                  </li>
-                ))}
-              </ul>
+              
             </div>
 
             {/* Resources */}
             <div>
-              <h4 className="text-white font-semibold text-lg mb-6">Resources</h4>
-              <ul className="space-y-3">
-                {resources.map((resource, index) => (
-                  <li key={index}>
-                    <a 
-                      href={resource.href}
-                      className="text-gray-400 hover:text-purple-400 transition-colors duration-200 flex items-center group"
-                      {...(resource.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
-                    >
-                      {resource.name}
-                      {resource.external && <ExternalLink className="w-3 h-3 ml-2 opacity-0 group-hover:opacity-100 transition-opacity" />}
-                    </a>
-                  </li>
-                ))}
-              </ul>
+              
 
               {/* Social Links */}
               <div className="mt-8">
